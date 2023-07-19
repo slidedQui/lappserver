@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+} 
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header{
+  background: #a7ff03;
+  margin: 0;
+}
+
+h1{
+    height: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: #4f4f4f;
+}
+
+#botones-funcion{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+#boton-empleados:hover, #boton-puestos:hover{
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#botones-accion{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 20px;
+}
+
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+#datos-empleado{
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+#columnas-empleado{
+    display: grid;
+    grid-template-columns: 40vh 40vh 40vh;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10vh;
+    margin-left: 10vh;
+    
+}
+
+#columna-puestos{
+    margin-left: 10vh;
+}
+
+#botones-acep-can{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-right: 10vh;
+}
+
+p{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#datos-puesto{
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+#ingresar-datos-puesto, #mostrar-info-puestos{
+    display: none;
+}
+
+#boton-empleados, #boton-puestos{
+    width: 108px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: #000000;
+    color:white;
+    font-weight: bold;
+}
+
+#boton-agregar{
+    width: 108px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: #1dcaff;
+    font-weight: bold;
+    /*font-family: 'Fredoka One', cursive; */
+}
+
+#boton-agregar:hover{
+    cursor: pointer;
+    background-color: #00a8db;
+}
+
+#boton-modificar{
+    width: 108px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: #e2df1d;
+    font-weight: bold;
+    /*font-family: 'Fredoka One', cursive; */
+}
+
+#boton-modificar:hover{
+    cursor: pointer;
+    background-color: #bab717;
+}
+
+#boton-baja{
+    width: 108px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: #fe8716;
+    font-weight: bold;
+    /*font-family: 'Fredoka One', cursive; */
+}
+
+#boton-baja:hover{
+    cursor: pointer;
+    background-color: #d17016;
+}
+
+input{
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0.2, 0.2, 0.2, 0.2);} 
+
+#boton-aceptar{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #a7ff03;
+    font-weight: bold;
+}
+
+#boton-aceptar:hover{
+    cursor: pointer;
+    background-color: #5bff02;
+}
+
+#boton-cancelar{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #d00303;
+    font-weight: bold;
+}
+
+#boton-cancelar:hover{
+    cursor: pointer;
+    background-color: #ff0000;
+}
+
+#buscador-empleado,#buscador-puesto p{
+    margin-left: 5vh;
+}
+
+#buscador-puesto{
+    display: none ;
+}
+
+#lupa-empleado,#lupa-puesto{
+    background-color: #0253f5;
+    border-radius:3px ;
+}
+
+#lupa-empleado:hover,#lupa-puesto:hover{
+    cursor: pointer;
+    background-color: #079cff;
+}
+
+#tabla-empleados{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* display: flex; */
+    justify-content: center;
+    border-style: inherit;
+    border-top-color: rgb(0, 0, 0);
+}
+#titulo-tabla-empleados td{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 90px;
+}
+
+#info-tabla-empleados{
+    border-top-color: #000000;
+}
+
+#tabla-puestos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: inherit;
+    border-top-color: rgb(0, 0, 0);
+}
+
+#tabla1,#tabla2{
+    display: flex;
+    justify-content: center;
+}
+
+#titulo-tabla-puestos td{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100px;
+}
+
+#info-tabla-puestostd{
+    border-top-color: #000000;
+}
+

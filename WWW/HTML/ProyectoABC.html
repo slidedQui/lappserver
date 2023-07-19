@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ProyectoABC📚</title>
+        <link rel='stylesheet' href='./styles.css'/>
+    </head>
+
+    <body>
+        <header id="header">
+            <h1>Proyecto ABC</h1>
+        </header>
+
+        <section id='seleccionar-funcion'>
+            <div id="botones-funcion">
+                    <button id='boton-empleados'>EMPLEADOS</button>
+                    <button id='boton-puestos'>PUESTOS</button>
+            </div>
+        </section>
+
+        <section id='seleccionar-accion'>
+            <div id="botones-accion">
+                <button id='boton-agregar'>Agregar ➕</button>
+                <button id='boton-modificar'>Modificar 🖋</button>
+                <button id='boton-baja'>Baja ❌</button>
+            </div>
+        </section>
+
+        <section id='ingresar-datos-empleado'>
+            <div id='datos-empleado'>
+                <h3>DATOS DEL EMPLEADO:</h3>
+                <div id="columnas-empleado">
+                    <div id="colum1">
+                        <p>No. Empleado<br><input type ='text' id="numero-empleado"/>
+                        <p>Nombre<br><input type ='text' id="nombre-empleado" maxlength="50"/></p>
+                        <p>Apellido Paterno<br><input type ='text' id ='apellido-paterno'maxlength="50"/></p>
+                        <p>Apellido Materno<br><input type ='text' id='apellido-materno' maxlength="50"/></p>
+                    </div>
+
+                    <div id='colum2'>
+                        <p>Dirección<br><input type ='text'id='direccion' maxlength="60"/></p>
+                        <p>Código Postal<br><input type ='text' id="codigo-postal" maxlength="5"/></p>
+                        <p>Teléfono<br><input type ='text' id='telefono' maxlength="10"/></p>
+                        <p>CURP <br><input type ='text' id="curp" maxlength="18"/></p>
+                    </div>
+
+                    <div id='colum3'>
+                        <p>NSS<br><input type ='text' id='nss' maxlength="11"/></p>
+                        <p>Puesto<br><input type ='text' id='puesto'/></p>
+                        <p>Causa Baja<br><input type ='text' id='causa-baja'/></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id='ingresar-datos-puesto'>
+            <div id="datos-puesto">
+                <h3>DATOS DEL PUESTO:</h3>
+                <div id='columna-puestos'>
+                    <p>Id<br><input type ='text' id="id-puesto"/></p>
+                    <p>Descripción<br><input type ='text' id='descripcion' maxlength="100"/></p>
+                    <p>Empleado registra<br><input type ='text' id='empleado-registra'/></p>
+                    <p>Empleado baja<br><input type ='text' id='empleado-baja'/></p>
+                </div>
+            </div>
+        </section>
+
+        <section id='aceptar-cancelar'>
+            <div id="botones-acep-can">
+                <button id='boton-aceptar'>Aceptar 📥</button>
+                <button id='boton-cancelar'>Cancelar ✖</button>
+            </div>
+        </section>
+
+        <section id='buscador-empleado'>
+            <p>Buscar No. empleado: 
+                <input type ='text' id="buscar-empleado"/>
+                <button id='lupa-empleado'>🔍</button>
+            </p>
+        </section>
+
+        <section id='buscador-puesto'>
+            <p>Buscar Id Puesto: 
+                <input type ='text' id="buscar-puesto"/>
+                <button id='lupa-puesto'>🔍</button>
+            </p>
+        </section>
+
+        <section id='mostrar-info-empleados'>
+            <div id="tabla1">
+                <table id="tabla-empleados" border="2px">
+                    <thead>
+                        <tr id="titulo-tabla-empleados">
+                            <td> No. empleado </td>
+                            <td> Nombre </td>
+                            <td> Apellido Paterno </td>
+                            <td>Apellido Materno</td>
+                            <td>Dirección</td>
+                            <td>Código Postal</td>
+                            <td>Teléfono</td>
+                            <td>CURP</td>
+                            <td>NSS</td>
+                            <td>Puesto</td>
+                            <!-- <td>Estatus</td> -->
+                            <td>Causa Baja</td>
+                            <!-- <td>Estatus</td>
+                            <td>Mensaje</td> -->
+                        </tr>
+                    </thead>
+                    
+                    <tbody id='info-tabla-empleados'>
+                    <!--aqui deberia de ir incrementando conforme la informacion aparezca se va a llenar con el JS-->
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+
+        <section id='mostrar-info-puestos'>
+            <div id="tabla2">
+                <table id="tabla-puestos" border="2px">
+                    <thead>
+                        <tr id="titulo-tabla-puestos">
+                            <td> Id </td>
+                            <td> Descripción </td>
+                            <td> Fecha Alta </td>
+                            <!-- <td> Estatus </td> -->
+                            <td> Fecha Baja </td>
+                            <td> Empleado registra </td>
+                            <td> Empleado baja </td>
+                            <!-- <td>Estatus</td>
+                            <td>Mensaje</td> -->
+                        </tr>
+                    </thead>
+                    <tbody id='info-tabla-puestos'>
+                        <!--aqui deberia de ir incrementando conforme la informacion aparezca-->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <script src="../JS/proyectoABC.js"></script> <!--Exporta JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        
+    </body>
+
+</html>
