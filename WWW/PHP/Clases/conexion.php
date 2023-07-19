@@ -1,8 +1,8 @@
 <?php
 class Conexion{
     private $host = "localhost";
-    private $port = "5433";
-    private $dbname = "PruebaDataBase";
+    private $port = "5432";
+    private $dbname = "postgres";
     private $user = "postgres";
     private $password = "1234";
     private $db;
