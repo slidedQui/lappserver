@@ -1,10 +1,10 @@
 <?php
 class Conexion{
-    private $host = "localhost";
+    private $host = "dev-postgres";
     private $port = "5432";
     private $dbname = "postgres";
     private $user = "postgres";
-    private $password = "1234";
+    private $password = "passw0rd";
     private $db;
     
     public function conectar(){
