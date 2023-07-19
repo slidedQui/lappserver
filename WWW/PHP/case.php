@@ -4,23 +4,23 @@ include_once('./Clases/Empleados.php');
 include_once('./Clases/Puestos.php');
 
 $arrRespuesta = array(); //respuesta
-$iOpcion = filter_input(INPUT_POST, 'iOpcion', FILTER_SANITIZE_STRING); //entrada
-$opcion = filter_input(INPUT_POST, 'opcion', FILTER_SANITIZE_STRING); //entrada
-$numeroempleado = filter_input(INPUT_POST, 'numeroempleado', FILTER_SANITIZE_STRING); //entrada
-$nombre = filter_input(INPUT_POST, 'nombre', FILTER_SANITIZE_STRING);
-$appaterno = filter_input(INPUT_POST, 'apellidopaterno', FILTER_SANITIZE_STRING); //entre '' el nombre en la tabla, el post lo busca como 'apellidopaterno'
-$appmaterno = filter_input(INPUT_POST, 'apellidomaterno', FILTER_SANITIZE_STRING);
-$direccion = filter_input(INPUT_POST, 'direccion', FILTER_SANITIZE_STRING);
-$codigopostal = filter_input(INPUT_POST, 'codigopostal', FILTER_SANITIZE_STRING);
-$telefono = filter_input(INPUT_POST, 'telefono', FILTER_SANITIZE_STRING);
-$curp = filter_input(INPUT_POST, 'curp', FILTER_SANITIZE_STRING);
-$nss = filter_input(INPUT_POST, 'nss', FILTER_SANITIZE_STRING);
-$puesto = filter_input(INPUT_POST, 'puesto', FILTER_SANITIZE_STRING);
-$causabaja = filter_input(INPUT_POST, 'causabaja', FILTER_SANITIZE_STRING);
-$idpuesto = filter_input(INPUT_POST, 'idpuesto', FILTER_SANITIZE_STRING);
-$descripcion = filter_input(INPUT_POST, 'descripcion', FILTER_SANITIZE_STRING);
-$empleadoalta = filter_input(INPUT_POST, 'empleadoalta', FILTER_SANITIZE_STRING);
-$empleadobaja = filter_input(INPUT_POST, 'empleadobaja', FILTER_SANITIZE_STRING);
+$iOpcion = filter_input(INPUT_POST, 'iOpcion'); //entrada
+$opcion = filter_input(INPUT_POST, 'opcion'); //entrada
+$numeroempleado = filter_input(INPUT_POST, 'numeroempleado'); //entrada
+$nombre = filter_input(INPUT_POST, 'nombre');
+$appaterno = filter_input(INPUT_POST, 'apellidopaterno'); //entre '' el nombre en la tabla, el post lo busca como 'apellidopaterno'
+$appmaterno = filter_input(INPUT_POST, 'apellidomaterno');
+$direccion = filter_input(INPUT_POST, 'direccion');
+$codigopostal = filter_input(INPUT_POST, 'codigopostal');
+$telefono = filter_input(INPUT_POST, 'telefono');
+$curp = filter_input(INPUT_POST, 'curp');
+$nss = filter_input(INPUT_POST, 'nss');
+$puesto = filter_input(INPUT_POST, 'puesto');
+$causabaja = filter_input(INPUT_POST, 'causabaja');
+$idpuesto = filter_input(INPUT_POST, 'idpuesto');
+$descripcion = filter_input(INPUT_POST, 'descripcion');
+$empleadoalta = filter_input(INPUT_POST, 'empleadoalta');
+$empleadobaja = filter_input(INPUT_POST, 'empleadobaja');
 
 switch($iOpcion){
     //case 1-5 es para empleados
